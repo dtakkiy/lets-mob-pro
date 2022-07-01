@@ -7,7 +7,7 @@
     "test:watch": "jest --watchAll --verbose",
     "format": "prettier --write --ignore-path .gitignore './**/*.{ts,json}'",
     "lint": "eslint . --ext ts",
-    "lint:fix": "eslint . --ext ts"
+    "lint:fix": "eslint --fix . --ext ts"
   },
   "keywords": [],
   "author": "",
