@@ -5,7 +5,9 @@
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "jest --watchAll --verbose",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{ts,json}'"
+    "format": "prettier --write --ignore-path .gitignore './**/*.{ts,json}'",
+    "lint": "eslint . --ext ts",
+    "lint:fix": "eslint . --ext ts"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +17,13 @@
     "@babel/preset-env": "^7.16.11",
     "@types/jest": "^27.4.0",
     "@types/node": "^17.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.30.3",
+    "@typescript-eslint/parser": "^5.30.3",
     "babel-jest": "^27.4.6",
+    "eslint": "^8.18.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
     "jest": "^27.4.7",
     "prettier": "^2.5.1",
     "ts-jest": "^27.1.3",
