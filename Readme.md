@@ -2,8 +2,25 @@
 
 let's mob pro!!
 
+## Stack
+
+- TypeScript
+- Jest
+- prettier
+- eslint
+
 ## How to start
 
-- `yarn`
+```
+$ yarn
+```
 
-- `yarn test`
+## Test
+
+```
+$ yarn test
+
+or
+
+$ yarn test:watch
+```
