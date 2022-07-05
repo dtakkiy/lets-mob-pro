@@ -1,14 +1,19 @@
 class Lru {
   private MAX_SIZE = 2;
 
-  constructor(private cache: string[]) {}
+  public constructor(private cache: string[]) {
+    this.cache = cache;
+  }
 
   public get(index: number): string {
     const data = this.cache[index];
-
     this.cache.splice(index, 1);
 
     return data;
+  }
+
+  public getCache() {
+    return [...this.cache];
   }
 
   public put(str: string) {
@@ -20,9 +25,4 @@ class Lru {
   }
 }
 
-const lruCache = new Lru([]);
-lruCache.put('praha');
-lruCache.put('airtable');
-console.log(lruCache);
-lruCache.put('matsubara');
-console.log(lruCache);
+export default Lru;
