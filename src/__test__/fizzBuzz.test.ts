@@ -1,4 +1,4 @@
-import { fizzBuzz } from '../fizzBuzz';
+import fizzBuzz from '../code/fizzBuzz';
 
 describe('fizzBuzz問題', () => {
   it('引数に3を与えた場合', () => {
