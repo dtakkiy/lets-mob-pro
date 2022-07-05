@@ -12,6 +12,7 @@
   "plugins": ["@typescript-eslint", "jest"],
   "rules": {
     "no-console": "off",
+    "class-methods-use-this": "off",
     "jest/consistent-test-it": ["error", { "fn": "it" }],
     "jest/require-top-level-describe": ["error"],
     "import/extensions": [
