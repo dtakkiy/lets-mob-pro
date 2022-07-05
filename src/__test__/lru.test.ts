@@ -7,11 +7,11 @@ describe('lru unit test', () => {
 
   it('cacheの操作', () => {
     const lruCache = new Lru([]);
-    lruCache.put('praha');
-    lruCache.put('airtable');
-    expect(lruCache.getCache()).toStrictEqual(['praha', 'airtable']);
+    lruCache.put('A');
+    lruCache.put('B');
+    expect(lruCache.getCache()).toStrictEqual(['A', 'B']);
 
-    lruCache.put('matsubara');
-    expect(lruCache.getCache()).toStrictEqual(['airtable', 'matsubara']);
+    lruCache.put('C');
+    expect(lruCache.getCache()).toStrictEqual(['B', 'C']);
   });
 });
