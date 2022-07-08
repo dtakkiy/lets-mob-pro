@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "jest --watchAll --verbose",
-    "format": "prettier --write --ignore-path .gitignore './**/*.{ts,json}'",
+    "format": "prettier --write --ignore-path .gitignore './src/**/*.{ts,json}'",
     "lint": "eslint . --ext ts",
     "lint:fix": "eslint --fix . --ext ts",
     "prepare": "husky install"
